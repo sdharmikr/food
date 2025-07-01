@@ -1,0 +1,649 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Great+Vibes&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap&family=Yellowtail&display=swap");
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+/* ================== DESKTOP NAV =================== */
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  padding: 20px 50px;
+  color: white;
+}
+.logo {
+  margin-right: auto;
+}
+.logo > img {
+  width: 100%;
+}
+.mainmenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainmenu > li {
+  padding: 0 18px;
+}
+.mainmenu > li > a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  border-bottom: 3px solid transparent;
+}
+.mainmenu > li > a:hover {
+  color: #c0a756;
+}
+
+/* ================== SLIDER =================== */
+.slider {
+  width: 100%;
+  height: 100dvh;
+  background-size: cover;
+}
+.carousel-inner {
+  transition: transform 0.6s ease;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 2;
+}
+
+/* ================== SLIDE CONTENT =================== */
+.slide-content {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 530px;
+  margin: auto;
+  bottom: 10px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+.voffset100 {
+  margin-top: 100px;
+}
+.logointro {
+  width: 80%;
+  max-width: 320px;
+  height: auto;
+}
+
+.slide-content > .item {
+  margin-bottom: 58px;
+  position: relative;
+}
+.slide-content > .item > h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 65px;
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-top: 10px;
+}
+.slide-sep {
+  display: block;
+  width: 115px;
+  height: 24px;
+  content: "";
+  background-repeat: no-repeat;
+  margin: 42px auto;
+  transition: all 0.5s ease;
+}
+.slide-content > p {
+  font-size: 20px;
+  font-style: italic;
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+  font-family: "Libre Baskerville", serif;
+  position: relative;
+  left: 0px;
+  width: 100%;
+}
+/* ================== MOBILE NAV =================== */
+.mobile {
+  display: none;
+}
+.toggle {
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+  margin-right: 15px;
+  padding: 0px 10px;
+}
+.mobilenavigation {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  align-items: center;
+  padding: 10px 30px;
+  color: white;
+}
+.mobilemainmenu {
+  display: none; /* default hidden */
+  position: absolute;
+  background: rgba(40, 40, 40, 0.9);
+  width: 90%;
+  top: 10%;
+  left: 5%;
+  margin: 0;
+  height: auto;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+.mobilemainmenu.active {
+  display: block;
+}
+.mobilemainmenu > li {
+  border-bottom: 1px solid;
+  padding: 15px 6px;
+}
+.mobilemainmenu > li > a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+/*-------- About-Section --------*/
+
+.section.about {
+  padding: 60px 0;
+}
+.section {
+  /* margin-bottom: 140px; */
+  padding-top: 66px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.section.about .jt_row {
+  padding-bottom: 55px;
+}
+
+.jt_row.visible {
+  opacity: 1;
+}
+h2.section-title {
+  text-align: center;
+  font-family: "Cabin";
+  font-weight: 600;
+  font-size: 28px;
+  color: #383733;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #2c2c2c;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.section-title .decor-line {
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  background: #e2d9bb;
+  margin: 0 15px;
+  vertical-align: middle;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 17px;
+  color: #777777;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+h2.heading {
+  font-family: "Great Vibes", serif;
+  font-size: 62px;
+  color: #c0a756;
+  margin-bottom: 20px;
+  text-align: center;
+}
+p.text {
+  font-family: "Cabin", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: #777777;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+p.text strong {
+  color: #c0a756;
+}
+.ornament {
+  display: block;
+  width: 65px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+.timetable {
+  background-image: url("https://i.postimg.cc/VsxwNBtr/opening-hours.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 80px 20px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.timetable h2 {
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-size: 39px;
+  font-weight: 700;
+  padding-top: 4px;
+  line-height: 110px;
+  vertical-align: top;
+}
+.section-title {
+  text-align: center;
+  font-family: "Cabin";
+  font-weight: 600;
+  font-size: 28px;
+  color: #383733;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.timetable-decorator {
+  display: inline-block;
+  width: 200px;
+  height: 110px;
+  background: url("https://i.postimg.cc/sXCJGCRC/timetable-decorator.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: " ";
+}
+.opening-hours {
+  display: inline-block;
+  vertical-align: top;
+}
+.timetable-decorator2 {
+  display: inline-block;
+  width: 200px;
+  height: 110px;
+  background: url("https://i.postimg.cc/rm95ddJ5/timetable-decorator2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: " ";
+}
+.section-subtitle2 {
+  color: #b29859;
+  font-family: "Yellowtail", serif;
+  font-size: 24px;
+  margin-bottom: 15px;
+  margin-top: -105px;
+}
+.days {
+  color: #b29859;
+  font-family: "Yellowtail", serif;
+  font-size: 43px;
+  line-height: 48px;
+  margin-top: -20px;
+}
+.hours {
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  margin-top: 0px;
+}
+.number {
+  margin-top: 40px;
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+}
+
+.section.menu {
+  padding-top: 0px;
+  background-image: url("https://i.postimg.cc/rFHF98ZW/menu-left.jpg"),
+    url("https://i.postimg.cc/ZRJTq00k/menu-right.jpg");
+  background-position: left, right;
+  background-repeat: no-repeat;
+  background-size: auto;
+  min-height: 950px;
+}
+.center {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 3em;
+}
+.section.menu h3 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #887025;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 33px;
+}
+.section.menu ul li {
+  text-transform: uppercase;
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #0c0901;
+  margin-bottom: 20px;
+}
+.section.menu ul li .detail {
+  display: block;
+  text-transform: none;
+  font-weight: 400;
+  color: #484745;
+  font-size: 15px;
+}
+.section.menu span {
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 18px;
+  color: #bfa760;
+  float: right;
+  text-align: left;
+}
+a.button.menu,
+.button.menu {
+  display: block;
+  margin: 0 auto;
+  font-family: "Cabin", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  color: #bfa760;
+  border: 2px solid #bfa760;
+  padding: 16px 10px;
+  margin-top: 68px;
+  margin-bottom: 23px;
+  background: transparent;
+  width: 260px;
+  height: 65px;
+}
+a.button.menu:hover {
+  background: #bfa760;
+  color: #ffffff;
+  transition: all 0.3s linear;
+}
+.section.dark {
+  background: #141313;
+}
+.section.dark h2 {
+  color: #ffffff;
+}
+h2.section-title2:before,
+h2.section-title2:after {
+  content: url("https://i.postimg.cc/gc6Tx2Q0/header-decorator.png");
+  margin: 14px;
+  color: #d1bc87;
+  vertical-align: text-bottom;
+}
+
+nav.primary ul li a {
+  font-size: 16px;
+  width: auto;
+  font-family: "Cabin", sans-serif;
+  padding: 0 28px;
+  border-bottom: 2px solid transparent;
+  font-weight: 600;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+}
+
+nav.primary {
+  width: auto;
+  margin: 0px auto;
+  display: table;
+  margin-bottom: 90px;
+}
+nav.primary ul li {
+  float: left;
+  list-style: none;
+}
+nav.primary ul li a {
+  height: 37px;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+}
+nav.primary ul li a:hover {
+  background-color: transparent;
+  border-bottom-color: #c1a667;
+  transition: all 0.3s linear;
+}
+
+@media screen and (min-width: 1400px) {
+  .mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 1399px) and (min-width: 1200px) {
+  .mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 576px) {
+  .navigation {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .mobilenavigation {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(12, 12, 13, 0.78);
+  }
+  .mobilemainmenu {
+    position: absolute;
+    background: rgba(40, 40, 40, 0.9);
+    width: 90%;
+    top: 14%;
+    left: 5%;
+    margin: 0px;
+    height: auto;
+  }
+  .mobilemainmenu > li {
+    padding: 0 10px;
+    border-bottom: 1px solid;
+    padding: 15px 6px 15px 5px;
+  }
+  .mobilemainmenu > li > a {
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 6px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+  }
+}
+.toggle {
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+  margin-right: 15px;
+  padding: 0px 10px;
+}
+@media screen and (max-width: 575px) {
+  .navigation {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+  .mobilenavigation {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    width: 100%;
+    top: 10;
+    z-index: 10;
+    align-items: center;
+    padding: 10px 30px;
+    color: white;
+  }
+  .mobilemainmenu {
+    position: absolute;
+    background: rgba(40, 40, 40, 0.9);
+    width: 90%;
+    top: 10%;
+    left: 5%;
+    margin: 0px;
+    height: auto;
+    z-index: 1;
+  }
+  .mobilemainmenu > li {
+    padding: 0 10px;
+    border-bottom: 1px solid;
+    padding: 15px 6px 15px 5px;
+  }
+  .mobilemainmenu > li > a {
+    color: #fff;
+  }
+  .toggle {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    margin-right: 15px;
+    padding: 0px 10px;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+  .slider {
+    height: 100vh;
+    object-fit: cover;
+  }
+  .carousel {
+    overflow: hidden;
+  }
+  .logointro {
+    width: 320px;
+    height: 274px;
+    background-size: cover;
+  }
+  .slide-content > .item > h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 10px;
+  }
+  .slide-content > p {
+    font-size: 12px;
+    font-style: italic;
+    color: #fff;
+    
+    text-align: center;
+    font-weight: 300;
+    font-family: "Libre Baskerville", serif;
+    position: relative;
+    left: 0px;
+    width: 100%;
+  }
+  .timetable-decorator,
+  .timetable-decorator2 {
+    display: none;
+  }
+  .section-subtitle2 {
+    margin-top: -60px;
+  }
+  .days {
+    margin-top: 0px;
+  }
+  .section.menu {
+    background-image: none;
+  }
+  .section.menu li {
+    margin: 0px 0px 0px -35px;
+  }
+  /* .carousel-item {
+    height: 100vh;
+  } */
+  nav.primary ul li {
+    float: none;
+    list-style: none;
+  }
+} 
+
+
