@@ -200,9 +200,9 @@ img {
   padding-bottom: 55px;
 }
 
-.jt_row.visible {
+/* .jt_row.visible {
   opacity: 1;
-}
+} */
 h2.section-title {
   text-align: center;
   font-family: "Cabin";
@@ -474,6 +474,237 @@ nav.primary ul li a:hover {
   transition: all 0.3s linear;
 }
 
+.section-subtitle3 {
+  text-align: center;
+  font-family: "Cabin";
+  font-weight: 400;
+  font-style: italic;
+  font-size: 17px;
+  color: #777777;
+  margin-bottom: 60px;
+}
+.reservations_logo {
+  display: block;
+  width: 70px;
+  height: 58px;
+  background: url("https://i.postimg.cc/mZM7PJJq/reservations-logo.png");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  content: " ";
+}
+.voffset40 {
+  margin-top: 40px;
+}
+.reservations h4 {
+  line-height: 0.5;
+  text-align: center;
+}
+.reservations h4 {
+  font-family: "Yellowtail";
+  font-size: 25px;
+  color: #141313;
+  text-align: center;
+  font-weight: 400;
+}
+.reservations h3 {
+  text-transform: uppercase;
+  color: #444342;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  margin: 15px 0px 15px 0px;
+}
+.voffset50 {
+  margin-top: 45px;
+}
+.reservations p {
+  font-family: "Cabin", sans-serif;
+  font-weight: 500;
+  color: #7d7a7a;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0px;
+}
+.reservations h3.reservation-phone {
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.reservations .contact-form p {
+  text-align: left;
+  color: #101010;
+  font-size: 1.4em;
+}
+
+section.reservations p {
+  font-family: "Cabin", sans-serif;
+  font-weight: 500;
+  color: #7d7a7a;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0px;
+}
+input,
+textarea {
+  color: #4b4747;
+}
+input,
+textarea {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  padding: 7px;
+  border: 1px solid #cbc8c8;
+  color: #4b4747;
+  border-radius: 0px;
+}
+img {
+  max-width: none;
+}
+.testimonials {
+  padding: 10px;
+  background-image: url("https://i.postimg.cc/FsbB6Nvy/testimonials.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 505px;
+}
+.testimonials-img {
+  display: block;
+  width: 110px;
+  height: 110px;
+  background: url("https://i.postimg.cc/YqcS3f24/testimonials-logo.png");
+  margin: 0 auto;
+  content: " ";
+}
+.testimonials h2 {
+  text-align: left;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  color: #bfa760;
+  text-transform: uppercase;
+}
+.item p {
+  font-family: "Cabin", sans-serif;
+  text-align: left;
+  font-weight: 400;
+  color: #e2e9ed;
+  font-size: 25px;
+  line-height: 1.8em;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.item span.author {
+  font-family: "Cabin", sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  color: #bfa760;
+  font-weight: 700;
+  float: left;
+  margin-bottom: 70px;
+}
+
+.carousel-indicators [data-bs-target] {
+  border-radius: 100px;
+  border: 2px solid #c1a667;
+  width: 12px;
+  height: 12px;
+  background: transparent;
+  margin: 0px 2px;
+  margin-top: 15px;
+}
+.section.dark {
+  background: #141313;
+}
+.section.dark input[type="text"] {
+  background: #2c2a2a;
+  border: none;
+  height: 80px;
+}
+.section.dark input {
+  padding-left: 20px;
+  margin-bottom: 44px;
+}
+.section.dark textarea {
+  resize: none;
+  padding-bottom: 20px;
+  min-height: 328px;
+  padding: 20px;
+  margin-bottom: 44px;
+  background: #2c2a2a;
+  border: none;
+}
+.button.contact {
+  display: block;
+  margin: 0 auto;
+  font-family: "Cabin", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 24px;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 50px;
+  width: 200px;
+  min-height: 70px;
+  background: #c1a667;
+}
+
+.maps-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.custom-map {
+  width: 1897px;
+  height: 627px;
+  border: 0;
+}
+.section {
+  padding: 30px 0;
+  text-align: center;
+}
+.section#footer {
+  overflow: visible;
+}
+
+#footer {
+  background: #141313;
+  text-align: center;
+  font-size: 20px;
+  color: #606060;
+  position: relative;
+  height: 240px;
+  padding-top: 75px;
+}
+ul.social {
+  margin-top: 15px;
+}
+#footer .social li {
+  display: inline;
+  margin: 0px 5px;
+  list-style: none;
+}
+#footer .social li .icon {
+  background: #3d3c38;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-size: 32px;
+  line-height: 60px;
+  color: #ffffff;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+#footer .social li .icon:hover {
+  background: #c1a667;
+}
+
 @media screen and (min-width: 1400px) {
   .mobile {
     display: none;
@@ -613,7 +844,6 @@ nav.primary ul li a:hover {
     font-size: 12px;
     font-style: italic;
     color: #fff;
-    
     text-align: center;
     font-weight: 300;
     font-family: "Libre Baskerville", serif;
@@ -644,6 +874,4 @@ nav.primary ul li a:hover {
     float: none;
     list-style: none;
   }
-} 
-
-
+}

@@ -85,7 +85,7 @@ function About() {
                 className="carousel slide carousel-fade"
                 data-bs-ride="carousel"
               >
-                <div className="carousel-inner">
+                <div className="carousel-inner mb-5">
                   <div className="carousel-item active">
                     <img
                       src="https://i.postimg.cc/pdzgR57g/about04.jpg"

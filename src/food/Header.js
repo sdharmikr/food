@@ -15,7 +15,7 @@ function Header() {
           <li>
             <a href="#">Home</a>
           </li>
-          <li>
+          <li>                                   
             <a href="#">About</a>
           </li>
           <li>
@@ -35,7 +35,7 @@ function Header() {
 
       {/* -------MobileNavigation------- */}
 
-      <div className="mobile">
+      <div className="mobile">    
         <div className="mobilenavigation">
           <div className="logo">
             <img
